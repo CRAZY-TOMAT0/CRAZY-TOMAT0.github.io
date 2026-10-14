@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作品与项目 · 郑婧雯</title>
+  <meta name="description" content="郑婧雯的项目与作品：远程心电监测评估系统、林语堂 AI 数字人纪念馆、标记分布学习框架（论文）。">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">ZJW</span>
+        <span>郑婧雯</span>
+        <span class="brand__sub">深圳大学 · 研一</span>
+      </a>
+
+      <nav class="nav" id="site-nav" data-nav aria-label="主导航">
+        <a class="nav__link" href="index.html">首页</a>
+        <a class="nav__link" href="about.html">关于我</a>
+        <a class="nav__link" href="skills.html">技能</a>
+        <a class="nav__link" href="projects.html" aria-current="page">作品展示</a>
+        <a class="nav__link" href="contact.html">联系方式</a>
+        <a class="btn btn--sm nav__cta" href="contact.html">联系我</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换深浅色主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2Z"/>
+          </svg>
+        </button>
+
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="eyebrow">作品展示</span>
+        <h1>三个项目，三种问题</h1>
+        <p class="lead">
+          医疗信号要在硬件约束下实时跑，数字人要让交互自然，标记分布学习要让模型表达力更强。
+          每个项目我都写清了负责的部分、用到的技术和最后的成果。
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- ============ 分类筛选 ============ -->
+        <div class="filter-bar" data-filter-bar role="group" aria-label="按类型筛选项目">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="filter-btn" type="button" data-filter="research" aria-pressed="false">科研论文</button>
+          <button class="filter-btn" type="button" data-filter="internship" aria-pressed="false">实习项目</button>
+          <button class="filter-btn" type="button" data-filter="contest" aria-pressed="false">竞赛项目</button>
+        </div>
+
+        <p class="filter-count">
+          共 <strong data-filter-count>3</strong> 个项目
+        </p>
+
+        <!-- ============ 项目卡片 ============ -->
+        <div class="project-grid">
+          <!-- 项目 1 · 科研论文 -->
+          <article class="card card--hover project-card reveal" id="p1" data-category="research">
+            <div class="project-card__cover">
+              <img src="assets/img/project-1.svg" alt="标记分布学习框架示意图" loading="lazy" width="1200" height="675">
+              <span class="project-card__cat">科研论文</span>
+            </div>
+            <div class="project-card__body">
+              <h3>基于特征拼接的标记分布学习框架</h3>
+              <p class="project-card__desc">
+                论文提出 LDLF-BOFC 框架：利用 AA-KNN 和 AA-BP 等基础模型生成预测标记分布，
+                再将其作为附加特征与原始特征拼接，增强模型的表达能力。
+              </p>
+
+              <dl class="meta-list">
+                <div class="meta-list__row"><dt>时间</dt><dd>2024.12 — 2025.06（约 6 个月）</dd></div>
+                <div class="meta-list__row"><dt>角色</dt><dd>核心成员 · 负责拼接策略与代码实现</dd></div>
+                <div class="meta-list__row"><dt>成果</dt><dd>完成论文写作，验证了拼接策略对模型表达力的提升</dd></div>
+              </dl>
+
+              <div class="tag-row">
+                <span class="tag">MATLAB</span>
+                <span class="tag">机器学习</span>
+                <span class="tag">标记分布学习</span>
+                <span class="tag">AA-KNN</span>
+                <span class="tag">AA-BP</span>
+              </div>
+
+              <div class="project-card__links">
+                <a class="btn btn--soft btn--sm" href="about.html#edu">教育背景</a>
+                <a class="btn btn--ghost btn--sm" href="about.html#awards">竞赛获奖</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 项目 2 · 实习项目 -->
+          <article class="card card--hover project-card reveal" id="p2" data-category="internship">
+            <div class="project-card__cover">
+              <img src="assets/img/project-3.svg" alt="远程心电监测系统示意图" loading="lazy" width="1200" height="675">
+              <span class="project-card__cat">实习项目</span>
+            </div>
+            <div class="project-card__body">
+              <h3>远程心电监测评估系统</h3>
+              <p class="project-card__desc">
+                在中科院苏州生物医学工程技术研究所参与研发。可穿戴设备采集心电信号并蓝牙发送，
+                电脑端 C# 串口读取完成采集、波形显示、信号处理与存储，
+                再用 SVM 识别预警异常，并基于 Vue 组件化开发移动端 APP。
+              </p>
+
+              <dl class="meta-list">
+                <div class="meta-list__row"><dt>时间</dt><dd>2025.03 — 2025.06（约 4 个月）</dd></div>
+                <div class="meta-list__row"><dt>单位</dt><dd>中国科学院苏州生物医学工程技术研究所</dd></div>
+                <div class="meta-list__row"><dt>角色</dt><dd>参与信号采集、算法应用与移动端开发</dd></div>
+              </dl>
+
+              <div class="tag-row">
+                <span class="tag">C#</span>
+                <span class="tag">SVM</span>
+                <span class="tag">Vue</span>
+                <span class="tag">串口 / 蓝牙</span>
+                <span class="tag">信号处理</span>
+              </div>
+
+              <div class="project-card__links">
+                <a class="btn btn--soft btn--sm" href="about.html#internship">实习经历</a>
+                <a class="btn btn--ghost btn--sm" href="contact.html">交流合作</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 项目 3 · AI 项目 -->
+          <article class="card card--hover project-card reveal" id="p3" data-category="contest">
+            <div class="project-card__cover">
+              <img src="assets/img/project-2.svg" alt="AI 数字人纪念馆界面示意图" loading="lazy" width="1200" height="675">
+              <span class="project-card__cat">AI 项目</span>
+              <span class="project-card__award">省赛银奖</span>
+            </div>
+            <div class="project-card__body">
+              <h3>林语堂 AI 数字人纪念馆</h3>
+              <p class="project-card__desc">
+                基于 Python 的 Flask 框架开发，运用大模型、Live2D 建模与 Web Speech 等技术。
+                包含与 Live2D 数字人形象交互（语音或文字交流）、文学作品阅读，
+                以及漳浦剪纸风格迁移（上传图片即可生成漳浦剪纸风格作品）三个模块。
+              </p>
+
+              <dl class="meta-list">
+                <div class="meta-list__row"><dt>时间</dt><dd>竞赛项目</dd></div>
+                <div class="meta-list__row"><dt>角色</dt><dd>项目负责人</dd></div>
+                <div class="meta-list__row"><dt>成果</dt><dd>获第三届创祎杯省赛银奖、2024 昇腾 AI 创新大赛省赛三等奖</dd></div>
+              </dl>
+
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Live2D</span>
+                <span class="tag">Web Speech</span>
+                <span class="tag">大模型</span>
+                <span class="tag">风格迁移</span>
+              </div>
+
+              <div class="project-card__links">
+                <a class="btn btn--soft btn--sm" href="about.html#awards">获奖详情</a>
+                <a class="btn btn--ghost btn--sm" href="contact.html">交流合作</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-note" data-filter-empty>该分类下暂时还没有项目，换个分类看看吧。</div>
+
+        <!-- ============ 竞赛获奖汇总 ============ -->
+        <div class="section-head" style="margin-top:clamp(48px,6vw,80px)">
+          <div class="section-head__text">
+            <span class="eyebrow">竞赛成果</span>
+            <h2 class="section-title">11 项竞赛奖项</h2>
+            <p>完整获奖明细见「关于我」页面。</p>
+          </div>
+          <a class="link-arrow" href="about.html#awards">查看全部奖项</a>
+        </div>
+
+        <div class="card award-summary reveal">
+          <div class="award-summary__item">
+            <div class="award-summary__num">4</div>
+            <div class="award-summary__label">国家级 / 国际级</div>
+          </div>
+          <div class="award-summary__item">
+            <div class="award-summary__num">11</div>
+            <div class="award-summary__label">竞赛获奖总数</div>
+          </div>
+          <div class="award-summary__item">
+            <div class="award-summary__num">1</div>
+            <div class="award-summary__label">全国一等奖</div>
+          </div>
+          <div class="award-summary__item">
+            <div class="award-summary__num">队长</div>
+            <div class="award-summary__label">ACM 竞赛队任职</div>
+          </div>
+        </div>
+
+        <div class="note-band" style="margin-top:30px">
+          <span aria-hidden="true">🧩</span>
+          <span>
+            <strong>关于分类筛选：</strong>每个项目卡片按
+            <code class="mono">research</code>（科研论文）、
+            <code class="mono">internship</code>（实习项目）、
+            <code class="mono">contest</code>（竞赛项目）分类，
+            点击上方标签可以只看某一类。
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="section-title">对某个项目感兴趣？</h2>
+          <p>无论是想了解实现细节，还是有类似的场景想一起做，都欢迎来信。</p>
+          <div class="cta-actions">
+            <a class="btn" style="--btn-bg:#fff;--btn-fg:#3b5bfd" href="contact.html">发一条消息</a>
+            <a class="btn btn--ghost" href="about.html">了解我的经历</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand__mark">ZJW</span>
+            <span>郑婧雯</span>
+          </a>
+          <p>深圳大学计算机与软件学院研一在读。本科 GPA 4.1/5、专业排名 3/99，
+             有算法竞赛、数学建模、科研与实习经历，欢迎交流。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>导航</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="skills.html">技能</a></li>
+            <li><a href="projects.html">作品展示</a></li>
+            <li><a href="contact.html">联系方式</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <ul>
+            <li><a href="mailto:mnnu_zhengjingwen@163.com">mnnu_zhengjingwen@163.com</a></li>
+            <li><a href="projects.html">项目作品</a></li>
+            <li><a href="contact.html">站内留言</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> 郑婧雯 · 个人主页</span>
+        <span>使用 HTML + CSS + 原生 JavaScript 构建</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>关于我 · 郑婧雯</title>
+  <meta name="description" content="关于郑婧雯：深圳大学计算机与软件学院研一在读。教育背景、主修课程成绩、科研经历、实习经历与竞赛获奖。">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">ZJW</span>
+        <span>郑婧雯</span>
+        <span class="brand__sub">深圳大学 · 研一</span>
+      </a>
+
+      <nav class="nav" id="site-nav" data-nav aria-label="主导航">
+        <a class="nav__link" href="index.html">首页</a>
+        <a class="nav__link" href="about.html" aria-current="page">关于我</a>
+        <a class="nav__link" href="skills.html">技能</a>
+        <a class="nav__link" href="projects.html">作品展示</a>
+        <a class="nav__link" href="contact.html">联系方式</a>
+        <a class="btn btn--sm nav__cta" href="contact.html">联系我</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换深浅色主题">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2Z"/>
+          </svg>
+        </button>
+
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 页面横幅 ============ -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <span class="eyebrow">关于我</span>
+        <h1>在算法、模型和真实设备之间来回跑</h1>
+        <p class="lead">
+          我是郑婧雯，2026 年 9 月进入深圳大学计算机与软件学院攻读计算机技术专业硕士。
+          本科四年我把主要精力放在三件事上：打牢课程基础、认真参加竞赛、动手做项目和科研。
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 基本信息 ============ -->
+    <section class="section">
+      <div class="container about-grid">
+        <div class="prose reveal">
+          <span class="eyebrow">个人简介</span>
+          <h2 class="section-title">我是怎么走到这一步的</h2>
+          <p style="margin-top:20px">
+            本科阶段我的状态可以用两个数字概括：GPA 4.1/5，专业排名 3/99。
+            但成绩只是结果，真正让我有收获的是过程里反复做的三件事——
+            <strong>把书上的算法亲手写出来</strong>、<strong>把模型接到真实数据上</strong>、
+            以及<strong>把结果做成别人能用的东西</strong>。
+          </p>
+          <p>
+            第一件事来自竞赛。我担任过 ACM 竞赛队队长，带队训练、组织校 ACM 编程竞赛。
+            蓝桥杯 C++ 全国三等奖、福建省大学生程序设计竞赛铜奖都是那段时间的成果。
+            除此之外我还参加了多届数学建模竞赛，累计拿到 4 个国家级或国际级奖项，
+            其中 MathorCup 全国一等奖、华数杯国家二等奖。算法和建模这两条线，
+            一条训练严谨性，一条训练把问题拆开的能力。
+          </p>
+          <p>
+            第二件事来自科研和实习。2024 年底我开始自学特征标记相关内容，
+            参与《基于特征拼接的标记分布学习框架》论文的核心代码编写与算法性能测试。
+            2025 年 3 月进入中国科学院苏州生物医学工程技术研究所实习，
+            参与远程心电监测评估系统研发——用 C# 通过串口读取可穿戴设备采集的心电信号，
+            用 SVM 做异常识别与预警，再用 Vue 组件化开发移动端 APP。
+            在那里我第一次感受到算法必须迁就硬件的现实约束，这段经历改变了我很多想法。
+          </p>
+          <p>
+            现在我在深圳大学读研一，希望继续在算法与工程方向深入，
+            也希望把本科积累的竞赛和建模经验带到研究里。空闲时间我喜欢整理代码和技术笔记，
+            偶尔也打打篮球。
+          </p>
+        </div>
+
+        <aside class="card reveal">
+          <h3>基本信息</h3>
+          <dl class="info-list" style="margin-top:14px">
+            <div class="info-list__row"><dt>姓名</dt><dd>郑婧雯</dd></div>
+            <div class="info-list__row"><dt>民族</dt><dd>汉</dd></div>
+            <div class="info-list__row"><dt>出生年月</dt><dd>2004.06</dd></div>
+            <div class="info-list__row"><dt>政治面貌</dt><dd>群众</dd></div>
+            <div class="info-list__row"><dt>现就读</dt><dd>深圳大学 · 计算机与软件学院</dd></div>
+            <div class="info-list__row"><dt>专业</dt><dd>计算机技术（硕士 · 研一）</dd></div>
+            <div class="info-list__row"><dt>邮箱</dt><dd>mnnu_zhengjingwen@163.com</dd></div>
+            <div class="info-list__row"><dt>所在城市</dt><dd>广东深圳</dd></div>
+          </dl>
+
+          <div class="fact-row" style="margin-top:22px;padding-top:20px;border-top:1px solid var(--border)">
+            <span class="fact"><span class="fact__num">4.1</span><span class="fact__label">GPA / 5</span></span>
+            <span class="fact"><span class="fact__num">3/99</span><span class="fact__label">专业排名</span></span>
+            <span class="fact"><span class="fact__num">11</span><span class="fact__label">竞赛获奖</span></span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 教育背景 ============ -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">教育背景</span>
+            <h2 class="section-title">两段学习经历</h2>
+          </div>
+        </div>
+
+        <div class="edu-grid" id="edu">
+          <article class="card card--hover edu-item reveal">
+            <div class="edu-item__top">
+              <span class="edu-item__date">2026.09 — 至今</span>
+              <span class="edu-item__deg">硕士研究生 · 在读</span>
+            </div>
+            <h3>深圳大学 · 计算机与软件学院</h3>
+            <p>
+              计算机技术专业研一在读。希望在算法与工程结合的方向上继续深入，
+              并尝试把本科阶段的竞赛与建模经验应用到研究问题中。
+            </p>
+            <div class="tag-row">
+              <span class="tag">计算机技术</span>
+              <span class="tag">研一</span>
+              <span class="tag">深圳</span>
+            </div>
+          </article>
+
+          <article class="card card--hover edu-item reveal">
+            <div class="edu-item__top">
+              <span class="edu-item__date">2022.09 — 2026.06</span>
+              <span class="edu-item__deg">本科 · 已毕业</span>
+            </div>
+            <h3>本科阶段</h3>
+            <p>
+              GPA 4.1/5，专业排名 3/99。课程以计算机、软件工程和数学为主，
+              同时担任 ACM 竞赛队队长并组织校级编程竞赛。
+            </p>
+            <div class="tag-row">
+              <span class="tag">GPA 4.1/5</span>
+              <span class="tag">排名 3/99</span>
+              <span class="tag">ACM 竞赛队队长</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 主修课程成绩 ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">主修课程</span>
+            <h2 class="section-title">成绩单</h2>
+            <p>满分 100 分，「优秀」为等级评定。</p>
+          </div>
+        </div>
+
+        <div class="course-grid reveal">
+          <div class="course-item"><span class="course-item__name">C 语言程序设计</span><span class="course-item__score">99</span></div>
+          <div class="course-item"><span class="course-item__name">高等数学</span><span class="course-item__score">98</span></div>
+          <div class="course-item"><span class="course-item__name">软件项目管理</span><span class="course-item__score">97</span></div>
+          <div class="course-item"><span class="course-item__name">Java 程序设计</span><span class="course-item__score">96</span></div>
+          <div class="course-item"><span class="course-item__name">线性代数</span><span class="course-item__score">94</span></div>
+          <div class="course-item"><span class="course-item__name">软件系统设计与体系结构</span><span class="course-item__score">92</span></div>
+          <div class="course-item"><span class="course-item__name">操作系统</span><span class="course-item__score">90</span></div>
+          <div class="course-item"><span class="course-item__name">网络及其计算</span><span class="course-item__score">90</span></div>
+          <div class="course-item"><span class="course-item__name">数据处理与可视化</span><span class="course-item__score course-item__score--text">优秀</span></div>
+          <div class="course-item"><span class="course-item__name">Java Web 程序设计</span><span class="course-item__score course-item__score--text">优秀</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 科研经历 ============ -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">科研经历</span>
+            <h2 class="section-title">把模型读懂，再把它写出来</h2>
+          </div>
+        </div>
+
+        <article class="card reveal">
+          <div class="exp-block__head">
+            <span class="exp-block__date mono" style="font-size:.82rem;font-weight:600;color:var(--accent)">2024.12 — 2025.06</span>
+            <span class="exp-block__org">论文合作 · 标记分布学习方向</span>
+          </div>
+          <h3>《基于特征拼接的标记分布学习框架》</h3>
+
+          <ul class="bullet-list">
+            <li>
+              <strong>项目概述：</strong>文章提出了一种基于特征拼接的标记分布学习框架 LDLF-BOFC。
+              利用 AA-KNN 和 AA-BP 等基础模型生成预测标记分布，
+              并将其作为附加特征与原始特征拼接，以增强模型的表达能力。
+            </li>
+            <li>
+              <strong>本人工作：</strong>自学特征标记相关内容，设计「预测标记分布 + 原始特征」的拼接策略，
+              参与核心代码的编写。
+            </li>
+            <li>
+              <strong>实现方式：</strong>基于 MATLAB 实现模型训练，生成样本的预测标记分布数据，
+              对数据进行整理并测试算法性能。
+            </li>
+            <li><strong>产出：</strong>完成论文写作。</li>
+          </ul>
+
+          <div class="tag-row">
+            <span class="tag">MATLAB</span>
+            <span class="tag">机器学习</span>
+            <span class="tag">标记分布学习</span>
+            <span class="tag">AA-KNN</span>
+            <span class="tag">AA-BP</span>
+            <span class="tag">论文写作</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 实习经历 ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">实习经历</span>
+            <h2 class="section-title">第一次做真正被使用的系统</h2>
+          </div>
+        </div>
+
+        <article class="card reveal" id="internship">
+          <div class="exp-block__head">
+            <span class="exp-block__date mono" style="font-size:.82rem;font-weight:600;color:var(--accent)">2025.03 — 2025.06</span>
+            <span class="exp-block__org">中国科学院苏州生物医学工程技术研究所</span>
+          </div>
+          <h3>远程心电监测评估系统</h3>
+
+          <ul class="bullet-list">
+            <li>
+              <strong>信号采集：</strong>通过可穿戴设备采集心电信号，蓝牙发送；
+              电脑端使用 C# 通过串口读取心电信号，完成采集、波形显示、信号处理和存储。
+            </li>
+            <li>
+              <strong>算法应用：</strong>通过 SVM 机器学习算法，对常见心电异常进行识别和预警。
+            </li>
+            <li>
+              <strong>结果输出：</strong>生成分析报告，数据和结果上传到远程心电监护平台。
+            </li>
+            <li>
+              <strong>移动端：</strong>基于 Vue 组件化开发移动端 APP，实现同样的监测预警功能，
+              以及远程平台数据交互和心脏疾病自我管理。
+            </li>
+          </ul>
+
+          <div class="tag-row">
+            <span class="tag">C#</span>
+            <span class="tag">串口通信</span>
+            <span class="tag">蓝牙</span>
+            <span class="tag">信号处理</span>
+            <span class="tag">SVM</span>
+            <span class="tag">Vue</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 竞赛获奖 ============ -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">竞赛获奖</span>
+            <h2 class="section-title">11 项竞赛奖项</h2>
+            <p>算法竞赛 3 项、数学建模与综合类 7 项、编程与机器人 1 项。</p>
+          </div>
+        </div>
+
+        <div class="card reveal" id="awards">
+          <ul class="award-list">
+            <li class="award-item">
+              <span class="award-badge award-badge--national">全国一等奖</span>
+              <div>
+                <div class="award-item__name">第十五届 MathorCup 数学应用挑战赛</div>
+                <div class="award-item__level">全国一等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--national">国家二等奖</span>
+              <div>
+                <div class="award-item__name">2024 华数杯国际赛</div>
+                <div class="award-item__level">国家二等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--intl">国际赛三等奖</span>
+              <div>
+                <div class="award-item__name">第十四届 APMCM 亚太地区大学生数学建模</div>
+                <div class="award-item__level">国际赛三等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--national">全国三等奖</span>
+              <div>
+                <div class="award-item__name">2024 蓝桥杯 C++</div>
+                <div class="award-item__level">全国三等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">铜奖</span>
+              <div>
+                <div class="award-item__name">第十一届福建省大学生程序设计竞赛</div>
+                <div class="award-item__level">铜奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">省一等奖</span>
+              <div>
+                <div class="award-item__name">2024 全国大学生数学建模竞赛</div>
+                <div class="award-item__level">省一等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">省二等奖</span>
+              <div>
+                <div class="award-item__name">2024 睿抗机器人开发者大赛（RAICOM）编程技能赛</div>
+                <div class="award-item__level">省二等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">省赛银奖</span>
+              <div>
+                <div class="award-item__name">第三届创祎杯全国大学生课外学术科技作品大赛</div>
+                <div class="award-item__level">省赛银奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">省赛三等奖</span>
+              <div>
+                <div class="award-item__name">2024 昇腾 AI 创新大赛</div>
+                <div class="award-item__level">省赛三等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">省三等奖</span>
+              <div>
+                <div class="award-item__name">2023 百度之星</div>
+                <div class="award-item__level">省三等奖</div>
+              </div>
+            </li>
+            <li class="award-item">
+              <span class="award-badge award-badge--prov">省三等奖</span>
+              <div>
+                <div class="award-item__name">2023 传智杯</div>
+                <div class="award-item__level">省三等奖</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 荣誉与证书 ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="eyebrow">荣誉与证书</span>
+            <h2 class="section-title">其他一些记录</h2>
+          </div>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="card card--hover honor-card reveal">
+            <div class="honor-card__icon" aria-hidden="true">🎖️</div>
+            <h3>国家励志奖学金</h3>
+            <p>本科阶段</p>
+          </article>
+          <article class="card card--hover honor-card reveal">
+            <div class="honor-card__icon" aria-hidden="true">📘</div>
+            <h3>专业奖学金</h3>
+            <p>本科阶段多次获得</p>
+          </article>
+          <article class="card card--hover honor-card reveal">
+            <div class="honor-card__icon" aria-hidden="true">🏅</div>
+            <h3>三好生标兵</h3>
+            <p>本科阶段</p>
+          </article>
+          <article class="card card--hover honor-card reveal">
+            <div class="honor-card__icon" aria-hidden="true">🔤</div>
+            <h3>CET-4 / CET-6</h3>
+            <p>521 / 433</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="section-title">想看这些经历的成果？</h2>
+          <p>作品展示页面里，每个项目都标注了我负责的部分和使用的技术。</p>
+          <div class="cta-actions">
+            <a class="btn" style="--btn-bg:#fff;--btn-fg:#3b5bfd" href="projects.html">去看作品</a>
+            <a class="btn btn--ghost" href="contact.html">联系我</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand__mark">ZJW</span>
+            <span>郑婧雯</span>
+          </a>
+          <p>深圳大学计算机与软件学院研一在读。本科 GPA 4.1/5、专业排名 3/99，
+             有算法竞赛、数学建模、科研与实习经历，欢迎交流。</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>导航</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="skills.html">技能</a></li>
+            <li><a href="projects.html">作品展示</a></li>
+            <li><a href="contact.html">联系方式</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <ul>
+            <li><a href="mailto:mnnu_zhengjingwen@163.com">mnnu_zhengjingwen@163.com</a></li>
+            <li><a href="projects.html">项目作品</a></li>
+            <li><a href="contact.html">站内留言</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> 郑婧雯 · 个人主页</span>
+        <span>使用 HTML + CSS + 原生 JavaScript 构建</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

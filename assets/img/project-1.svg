@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="标记分布学习框架示意图">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#e0e7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#a)"/>
+  <g opacity=".55" stroke="#c7d2fe" stroke-width="1">
+    <path d="M0 135h1200M0 270h1200M0 405h1200M0 540h1200"/>
+  </g>
+
+  <!-- 原始特征 -->
+  <rect x="70" y="270" width="200" height="110" rx="12" fill="#fff" stroke="#a5b4fc" stroke-width="2"/>
+  <text x="170" y="316" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="700" fill="#4338ca">原始特征</text>
+  <text x="170" y="348" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="16" fill="#6366f1">Raw Feature</text>
+
+  <!-- 基础模型 -->
+  <rect x="380" y="150" width="200" height="90" rx="12" fill="#fff" stroke="#a5b4fc" stroke-width="2"/>
+  <text x="480" y="188" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="700" fill="#4338ca">AA-KNN</text>
+  <text x="480" y="216" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" fill="#6366f1">基础模型</text>
+
+  <rect x="380" y="410" width="200" height="90" rx="12" fill="#fff" stroke="#a5b4fc" stroke-width="2"/>
+  <text x="480" y="448" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="700" fill="#4338ca">AA-BP</text>
+  <text x="480" y="476" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" fill="#6366f1">基础模型</text>
+
+  <!-- 预测标记分布 -->
+  <rect x="690" y="150" width="220" height="90" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="800" y="188" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="700" fill="#3730a3">预测标记分布</text>
+  <text x="800" y="216" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" fill="#4338ca">LDLF-BOFC</text>
+
+  <rect x="690" y="410" width="220" height="90" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="800" y="448" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="19" font-weight="700" fill="#3730a3">预测标记分布</text>
+  <text x="800" y="476" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="15" fill="#4338ca">LDLF-BOFC</text>
+
+  <!-- 连线 -->
+  <g stroke="#818cf8" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M270 325 L340 325 L340 195 L380 195"/>
+    <path d="M270 325 L340 325 L340 455 L380 455"/>
+    <path d="M580 195 L690 195"/>
+    <path d="M580 455 L690 455"/>
+    <path d="M800 240 L800 370 L290 370 L290 325"/>
+  </g>
+  <g fill="#6366f1">
+    <path d="M380 195 l-14 -8 v16 z"/>
+    <path d="M380 455 l-14 -8 v16 z"/>
+    <path d="M690 195 l-14 -8 v16 z"/>
+    <path d="M690 455 l-14 -8 v16 z"/>
+  </g>
+  <circle cx="290" cy="370" r="7" fill="#4f46e5"/>
+  <circle cx="290" cy="370" r="14" fill="#4f46e5" opacity=".2"/>
+
+  <!-- 拼接标签 -->
+  <text x="290" y="350" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="700" fill="#4f46e5">特征拼接</text>
+
+  <text x="600" y="95" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#4338ca" letter-spacing="2">RESEARCH · PAPER</text>
+</svg>

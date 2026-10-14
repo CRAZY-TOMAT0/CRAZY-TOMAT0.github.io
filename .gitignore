@@ -1,0 +1,15 @@
+﻿# 编译输出
+*.exe
+*.dll
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 依赖目录（本站为零依赖，保留以防将来引入）
+node_modules/

@@ -1,0 +1,184 @@
+/* =============================================================
+   projects.css — 作品展示页专属样式
+   ============================================================= */
+
+/* 分类筛选栏 */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all var(--dur) var(--ease);
+}
+
+.filter-btn:hover { color: var(--text); border-color: var(--border-strong); }
+
+.filter-btn.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+}
+
+/* 计数行 */
+.filter-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-faint);
+  margin-bottom: 28px;
+}
+
+.filter-count strong {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+/* 项目网格 */
+.project-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
+.project-card.is-hidden { display: none; }
+
+/* 封面 */
+.project-card__cover {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+
+.project-card:hover .project-card__cover img { transform: scale(1.045); }
+
+.project-card__cat {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 11px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.9);
+  color: #11151b;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* 奖项角标 */
+.project-card__award {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 11px;
+  border-radius: var(--radius-pill);
+  background: rgba(234, 88, 12, 0.92);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* 内容区 */
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px;
+}
+
+.project-card__desc { margin-top: 10px; font-size: 0.93rem; }
+
+/* 元信息 */
+.meta-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.86rem;
+}
+
+.meta-list__row { display: flex; gap: 10px; }
+.meta-list__row dt { flex: none; width: 4.5em; color: var(--text-faint); }
+.meta-list__row dd { color: var(--text-muted); }
+
+/* 链接区 */
+.project-card__links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.project-card__links .btn { flex: 1; }
+
+/* 空状态 */
+.empty-note {
+  display: none;
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--text-faint);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+}
+
+.empty-note.is-shown { display: block; }
+
+/* 获奖汇总条 */
+.award-summary {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 26px;
+}
+
+.award-summary__item { text-align: center; }
+
+.award-summary__num {
+  font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+.award-summary__label {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+@media (max-width: 560px) {
+  .project-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="远程心电监测系统示意图">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#cffafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#b)"/>
+  <circle cx="1060" cy="140" r="200" fill="#06b6d4" opacity=".13"/>
+
+  <!-- 心电波形面板 -->
+  <rect x="70" y="140" width="700" height="330" rx="16" fill="#0f172a"/>
+  <g stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 320 h90 l14 -22 l16 46 l18 -96 l20 132 l16 -66 l12 26 h90"/>
+    <path d="M396 320 h60 l14 -22 l16 46 l18 -96 l20 132 l16 -66 l12 26 h52"/>
+  </g>
+  <path d="M100 320 h600" stroke="#1e293b" stroke-width="1"/>
+  <g stroke="#1e3a4a" stroke-width="1">
+    <path d="M100 200h600M100 260h600M100 380h600M100 440h600"/>
+  </g>
+  <text x="100" y="182" font-family="ui-monospace,Consolas,monospace" font-size="15" fill="#475569">ECG · 实时采集</text>
+  <text x="700" y="440" text-anchor="end" font-family="ui-monospace,Consolas,monospace" font-size="15" fill="#22d3ee" font-weight="700">72 bpm</text>
+
+  <!-- 设备 -->
+  <rect x="820" y="150" width="150" height="200" rx="20" fill="#fff" stroke="#67e8f9" stroke-width="2"/>
+  <path d="M868 205 h54 v40 h-54 z" fill="#cffafe"/>
+  <path d="M862 300 q28 -34 56 0" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+  <text x="895" y="330" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="14" fill="#0e7490">可穿戴</text>
+
+  <!-- 流程条 -->
+  <g font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="600" fill="#0e7490">
+    <rect x="820" y="380" width="150" height="44" rx="10" fill="#fff" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="895" y="408" text-anchor="middle">蓝牙发送</text>
+    <rect x="820" y="440" width="150" height="44" rx="10" fill="#fff" stroke="#a5f3fc" stroke-width="2"/>
+    <text x="895" y="468" text-anchor="middle">C# 串口读取</text>
+  </g>
+  <g stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M895 350 v26"/>
+    <path d="M895 424 v12"/>
+  </g>
+
+  <!-- SVM 标签 -->
+  <rect x="180" y="510" width="840" height="80" rx="14" fill="#fff" opacity=".92" stroke="#67e8f9" stroke-width="2"/>
+  <g font-family="Inter,Segoe UI,sans-serif">
+    <text x="230" y="558" font-size="19" font-weight="700" fill="#0e7490">SVM 异常识别与预警</text>
+    <text x="540" y="558" font-size="16" fill="#0891b2">信号处理 · 存储 · 分析报告 · Vue 移动端</text>
+  </g>
+
+  <text x="600" y="95" text-anchor="middle" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#0e7490" letter-spacing="2">INTERNSHIP · CAS</text>
+</svg>
